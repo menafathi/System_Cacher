@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB6B0549-DAA8-46B9-81BE-D8EEF0D64252}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>systemCacher</RootNamespace>
+    <AssemblyName>systemCacher</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Aha-Soft-Large-Business-Cash-register.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>D:\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>D:\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>D:\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>D:\Program\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Designer">
+      <HintPath>..\..\..\..\..\Desktop\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\Desktop\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Debit.cs" />
+    <Compile Include="Debit_account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debit_account.Designer.cs">
+      <DependentUpon>Debit_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debit_All.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debit_All.Designer.cs">
+      <DependentUpon>Debit_All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paid_accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paid_accounts.Designer.cs">
+      <DependentUpon>paid_accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prfites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prfites.Designer.cs">
+      <DependentUpon>prfites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prodact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prodact.Designer.cs">
+      <DependentUpon>Prodact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rep_Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rep_Bill.Designer.cs">
+      <DependentUpon>Rep_Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seller.cs" />
+    <Compile Include="SerchProdact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerchProdact.Designer.cs">
+      <DependentUpon>SerchProdact.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debit_account.resx">
+      <DependentUpon>Debit_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debit_All.resx">
+      <DependentUpon>Debit_All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paid_accounts.resx">
+      <DependentUpon>paid_accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prfites.resx">
+      <DependentUpon>prfites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prodact.resx">
+      <DependentUpon>Prodact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_Bill.resx">
+      <DependentUpon>Rep_Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerchProdact.resx">
+      <DependentUpon>SerchProdact.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="db.db" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gakuseisean-Ivista-2-Start-Menu-Search.ico" />
+    <None Include="Resources\Custom-Icon-Design-Flatastic-9-Login.ico" />
+    <None Include="Resources\qqqqqqqq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fasticon-Shop-Cart-Shop-cart-add.ico" />
+    <None Include="Resources\Artdesigner-Lovely-Website-Register.ico" />
+    <None Include="Resources\Dakirby309-Simply-Styled-Android-Market.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aha-Soft-Large-Business-Cash-register.ico" />
+    <Content Include="db.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Double-J-Design-Electronics-SMD-64-pin.ico" />
+    <None Include="Resources\Artdesigner-Lovely-Website-Register1.ico" />
+    <None Include="Resources\2995005_sun_sunny_yellow_weather_beach_icon2.ico" />
+    <None Include="Resources\2995005_sun_sunny_yellow_weather_beach_icon1.ico" />
+    <None Include="Resources\Aha-Soft-Large-Business-Cash-register1.ico" />
+    <None Include="Resources\4698596_calendar_date_day_event_schedule_icon.ico" />
+    <None Include="Resources\3943417_appointment_calendar_christmas_date_day_icon.ico" />
+    <None Include="Resources\2995005_sun_sunny_yellow_weather_beach_icon.ico" />
+    <None Include="Resources\Dapino-Office-Women-Office-women-red.ico" />
+    <None Include="Resources\Awicons-Vista-Artistic-Search.ico" />
+    <None Include="Resources\Aha-Soft-Large-Business-Cash-register.ico" />
+    <None Include="Resources\Google-Noto-Emoji-People-Clothing-Objects-12176-necktie.ico" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-11-Cash.ico" />
+    <None Include="Resources\Designcontest-Ecommerce-Business-Money.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
